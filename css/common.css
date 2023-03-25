@@ -1,0 +1,122 @@
+/* imported google web fonts: 'Bebas Neue','Joan','Kdam Thmor Pro','League Gothic','Shadows Into Light','Raleway','Roboto Slab' */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Joan&family=Kdam+Thmor+Pro&family=League+Gothic&family=Raleway&family=Roboto+Slab&family=Shadows+Into+Light&display=swap');
+
+
+/* Style all font awesome icons */
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 20%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+ .fa-facebook {
+  color: #3B5998;
+  background-color: white;
+}
+
+
+.fa-twitter {
+  background: white;
+  color: #55ACEE;
+}
+
+  
+.fa-youtube {
+  background: white;
+  color: #bb0000;
+}
+
+.fa-instagram {
+  background: white;
+  color: #125688;
+} 
+
+/* ************* */
+
+header {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+nav {
+    font-family: Roboto Slab;
+    font-size: 1.3rem;
+    height: auto;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.nav-link {
+    text-decoration: none;
+}
+
+
+/* *************  */
+.container {
+  background-image: 
+  linear-gradient(to bottom, rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50)),
+  url("./../images/bgImg01.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+
+  height: 65vh;
+  width: 100%;
+
+  /* ALIGN CENTER FOR FLEX COLUMN */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container p {
+  color: white;
+  font-size: 4rem;
+}
+
+
+.social {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  column-gap: 30px;
+
+  border-color: green;
+  border-style: solid;
+  border-width: 1px 0px 0px 0px; 
+  /*  top, right, bottom and left */
+
+  margin-top: 50px;
+  padding-top: 3%;
+}
+
+.contact {
+  padding-top: 2%;
+  padding-bottom: 3%;
+  text-align: center;
+
+  font-family: Roboto Slab;
+  font-size: 1rem;
+}
+
+/* ***************** */
+
+@media screen and (max-width: 400px) {
+  nav {
+    font-size: 1rem;
+  }
+
+  .contact {
+    font-size: 0.8rem;
+  }
+}

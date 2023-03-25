@@ -1,0 +1,178 @@
+@font-face {
+    font-family: Berkshire Swash;
+    src: url(/font/BerkshireSwash.ttf);
+}
+
+
+main {
+    font-family: Roboto Slab;
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+
+    padding-bottom: 50px;
+}
+
+h1 {
+    background-image: 
+        linear-gradient(to bottom, rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50)),
+        url("./../images/bgImg01.jpg");
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content:space-evenly;
+        align-items: center;
+
+        color: yellow;
+    
+        height: 10vh;
+        width: 100%;   
+
+        text-align: center;
+}
+
+.ContForm .fLine:nth-child(1) {
+    font-family: Roboto Slab;
+    font-size: 2rem;
+    font-weight: bold;
+    background-color: #276b9c;
+    color: #ffc107;
+    justify-content: center;
+    align-content: center;
+}
+
+.ContForm {
+    display: flex;
+    flex-direction: column;
+
+    margin-top: 50px;
+    background-color: rgba(230, 222, 222, 0.774);
+}
+
+.fLine {
+    display: flex;
+    flex-direction: row;
+
+    justify-content:space-between;
+
+    padding: 5%;
+}
+
+.ContForm .fLine:nth-child(5) {
+    display: flex;
+    flex-direction: column;
+
+    padding-top: 0%;
+    padding-bottom: 0%;
+}
+
+.fLine label {
+    padding-bottom: 20px;
+}
+
+
+#fName, #fEmail, #fEmailSubject {
+    width: 500px;
+    height: 30px;
+}
+
+#fMsg {
+    width: 590px;
+    height: 200px;
+}
+
+#fSendEmail {
+    width: 170px;
+    height: 45px;
+
+    background-color: #276b9c;
+    color: #ffc107;
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding-top: 0%;
+    border: transparent;
+}
+
+label {
+    width: 150px;
+
+    font-family: Roboto Slab;
+    font-size: 1rem;
+}
+
+#thankMsg {
+    width: 800px;
+    height: 250px;
+}
+/* ******** */
+
+@media screen and (max-width: 600px) {
+    .ContForm {
+        padding: 2%;
+    }
+    .fLine {
+        display: flex;
+        flex-direction: column;
+
+        padding: 0%;
+    }
+
+    #fName, #fEmail, #fEmailSubject {
+        width: 400px;
+        height: 30px;
+    }
+    
+    #fMsg {
+        width: 400px;
+        height: 200px;
+    }
+
+    #thankMsg {
+        width: 450px;
+        height: 150px;
+    }
+}
+
+
+@media screen and (max-width: 400px) {
+
+    #fName, #fEmail, #fEmailSubject {
+        width: 300px;
+        height: 30px;
+    }
+    
+    #fMsg {
+        width: 300px;
+        height: 200px;
+    }
+
+    .ContForm .fLine:nth-child(1) {
+        font-size: 1.5rem;
+    }
+
+    #fSendEmail {
+        width: 150px;
+        height: 35px;
+
+        font-size: 1rem;
+    }
+
+    label {
+        font-size: 0.8rem;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+
+        align-items: center;
+    }
+
+    #thankMsg {
+        width: 280px;
+        height: 100px;
+    }
+}
